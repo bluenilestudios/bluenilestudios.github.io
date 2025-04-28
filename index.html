@@ -12,22 +12,23 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            padding: 20px;
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            gap: 50px;
         }
 
         .name {
             font-size: 36px;
             font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
+            color: #333333;
             text-shadow: 1px 1px 2px #bbb;
         }
 
         .launching {
             font-size: 20px;
-            color: #888; /* Grey color for the under-construction text */
-            margin-bottom: 20px; /* Additional spacing */
+            color: #888;
+            text-align: center;
         }
 
         .contact-button {
@@ -40,16 +41,45 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            margin-left: 40px;
         }
 
         .contact-button:hover {
             background-color: #2980b9;
         }
+
+        .app-links {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .app-links a {
+            color: #3498db;
+            text-decoration: none;
+            
+        }
+
+        .app-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="name">Blue Nile Studios</div>
-    <div class="launching"> Mobile App Studio 👨🏽‍💻📱</div>
-    <a href="mailto:support@bluenilestudios.co" class="contact-button">Contact</a>
+    <div class="launching"> Mobile App Studio 👨🏽‍💻📱<br>
+        <span class="app-links">
+            Makers of Ethiopia Today app for
+            <a href="https://apps.apple.com/us/app/ethiopia-today/id1563263735" target="_blank">iOS</a>
+            and
+            <a href="https://play.google.com/store/apps/details?id=com.bluenilestudios.ethiopiatoday
+            " target="_blank">Android</a>.
+        </span>
+    </div>
+    <span>
+        <a href="mailto:support@bluenilestudios.co" class="contact-button">Contact</a> 
+        <a href="/privacy-policy.html" class="contact-button">Privacy Policy</a> 
+    </span>
 </body>
 </html>
